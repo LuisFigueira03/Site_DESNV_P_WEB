@@ -63,7 +63,6 @@ $feedbacks = $stmtFb->fetchAll(PDO::FETCH_ASSOC);
         <?php foreach ($feedbacks as $fb): ?>
           <div class="bg-green-600 rounded-2xl shadow p-6 text-center min-h-[220px]">
 
-            <p class="font-semibold text-white">Nome:</p>
             <p class="text-white"><?= htmlspecialchars($fb['nome']) ?></p>
 
             <p class="mt-4 font-semibold text-white">Número de estrelas:</p>
